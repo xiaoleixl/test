@@ -8,10 +8,6 @@
 </head>
 <body>
 <h1>登录界面</h1>
-<h2>hahahh</h2>
-<h2>hahahh</h2>
-<h2>hahahh</h2>
-<h2>hahahh</h2>
 	<a href="regist.jsp">立即注册</a>
 	<form action="login.do" method="post">
 		用户名：<input type="text" name="username"/><br/>
