@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.xl.entity.User" table="user">
+		<id name="userId" type="java.lang.Integer">
+			<column name="user_id"></column>
+			<!-- 指定数据库依靠底层方式(数据库自增) -->
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="user_name" sql-type="varchar(50)"></column>
+		</property>
+		<property name="pwd" type="java.lang.String">
+			<column name="pwd" sql-type="varchar(20)"></column>
+		</property>
+	</class>
+
+</hibernate-mapping>
